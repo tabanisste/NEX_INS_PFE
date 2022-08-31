@@ -1,0 +1,8 @@
+{
+	"gateway_conf": {
+		"gateway_ID": "E45F01FFFEAE21B3",
+                "server_address": san,
+                    "serv_port_up": pan,
+                    "serv_port_down": pdn 
+	}
+}
