@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body >
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+   <div style=" margin:auto;width: 50%; padding-top:80px ;">
+   <select class="form-select" aria-label="Default select example" id="colorselector" style="border-radius: 0.25in"  >
+      <option selected>choose your way of connection</option>
+      <option value="1">UDP packet forwarder</option>
+      <option value="2">Basic Station</option>
+    </select>
+   </div>
+ <div id="1"  class="connection" style="margin: auto;width: 50%;border: 3px solid #595385;border-radius: 0.25in;padding: 10px;display:none"> 
+    <div style="margin: auto">
+        Packet Forwarder Settings
+    </div >
+    <p style="margin: auto">
+        Protocole : TTN UDP packet Forwarder
+    </p>
+    <form  action="/myform" method="GET">
+<div  >         
+<table  style="margin: auto">
+ <tr >
+     <th>
+        Server address 
+     </th>
+     <th>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="server"  value="nexelec.eu1.cloud.thethings.industries" required name="san" required />
+     </th>
+     
+ </tr>
+ <tr>
+    <th>
+       Server port up  
+    </th>
+    <th>
+       <input type="text" class="form-control" id="validationCustom02" placeholder="number"  value="1700" name="pan" required />
+    </th>
+    
+</tr>
+<tr>
+    <th>
+       Server port down 
+    </th>
+    <th>
+       <input type="text" class="form-control" id="validationCustom02" placeholder="number" value="1700" name="pdn" required />
+    </th>
+</tr>
+
+</table>
+<div  style="text-align: center;" > <input  type="submit" value="Submit"  /> </div>
+</div>
+</form>
+</div>
+<div id="2"  class="connection" style="margin: auto;width: 50%;border: 3px solid #595385;border-radius: 0.25in;padding: 10px;display:none"> 
+   <div style="margin: auto">
+       Basic Station configuration
+   </div >
+   <div>
+   <select class="form-select" aria-label="Default select example" id="colleo" style="border-radius: 0.25in"  >
+      <option selected>choose your way of connection</option>
+      <option value="4">CUPS PROTOCOL</option>
+      <option value="5">LNS PROTOCOL</option>
+    </select>
+    <form  action="/basicstation" method="GET">
+<div id="4" class="connectin" style="display:none" >
+   
+      <div>
+<table  style="margin: auto">
+<tr >
+    <th>
+       CUPS URI 
+    </th>
+    <th>
+       <input type="text" class="form-control" id="validationCustom02" placeholder="uri"  value="" required name="san" required />
+    </th>
+    
+</tr>
+<tr>
+   <th>
+      CUPS KEY  
+   </th>
+   <th>
+      <input type="text" class="form-control" id="validationCustom02" placeholder=".key"  value="" name="pan" required />
+   </th>
+   
+</tr>
+<tr>
+   <th>
+      CUPS TRUST 
+   </th>
+   <th>
+      <input type="text" class="form-control" id="validationCustom02" placeholder=".trust" value="" name="pdn" required />
+   </th>
+</tr>
+</table>
+      </div>
+</div>
+<div id="5" class="connectin" style="display:none" >
+      <div>
+<table style="margin: auto"> 
+   <tr >
+      <th>
+         TC URI 
+      </th>
+      <th>
+         <input type="text" class="form-control" id="validationCustom02" placeholder="URI"  value="" required name="san" required />
+      </th>
+      
+  </tr>
+  <tr>
+     <th>
+        TC KEY  
+     </th>
+     <th>
+        <input type="text" class="form-control" id="validationCustom02" placeholder=".key"  value="" name="pan" required />
+     </th>
+     
+  </tr>
+  <tr>
+     <th>
+        TC TRUST 
+     </th>
+     <th>
+        <input type="text" class="form-control" id="validationCustom02" placeholder=".trest" value="" name="pdn" required />
+     </th>
+  </tr>
+
+</table>
+</div>
+<div  style="text-align: center;" > <input  type="submit" value="Submit"  /> </div>
+</div>
+</form>
+</div>
+</div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+
+</html>
