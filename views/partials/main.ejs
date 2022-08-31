@@ -1,0 +1,170 @@
+  <div class="container">
+    <div class="row" >
+        <div class="col" style="padding-bottom: 0%;">
+<button id="carouselExempl" class="btn btn-primary  " data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+    <div class="btnTest" style="background-image:url('/images/info.png');" >
+    gateway information</div>  </button>
+<div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="card card-body"    >
+       <table class="table" >
+        <thead class="thead-dark">  
+        <tr>
+                   <th style="text-align:center"> Gateway information</th>
+               </tr>
+            </thead>
+               <tr>
+                <th id="p2"> Hostname : <%= hostname %> 
+                    <br> Gateway EUI        :   <%= macadress %> 
+                    <br> Serial number : <%= sn %>
+                    <br> Status of gateway   :  <%= status %>
+                    <br> Version of gateway : <%= version %>
+                    <br> Uptime of gateway  : <%= uptime %>
+                    <br> Date                : <%= date %>
+                </th>
+               </tr>
+           </table>       
+       </div>
+   </div>
+
+</div>
+<div class="col" style="padding-bottom: 0%;">
+<button id="carouselExempl" class="btn btn-primary " data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+<div class="btnTest" style="background-image:url('/images/ethernet.png');" >
+    Ethernet information</div></button>
+<div class="collapse multi-collapse" id="multiCollapseExample2" >
+    <div class="card card-body"    >   
+       <table class="table">
+        <thead class="thead-dark">
+           <tr>
+               <th style=" text-align:center "> Network informaion</th>
+           </tr>
+        </thead>
+           <tr>
+            <th id="p2"> Interface : <%= interface %> 
+                <br> type        :   <%= type %> 
+                <br> MAC Address : <%= mac_address %>
+                <br> ipv4   :  <%= ipv4 %>
+                <br> ipv6 : <%= ipv6 %>
+                <br> Gateway  : <%= gateway %>
+                <br> DNS                : <%= dns %>
+                <br> tx                : <%= rx %>
+                <br> tx                : <%= tx %>
+            </th>
+           </tr>
+       </table>       
+     </div>
+   </div>
+   </div>
+        <div class="col" style="padding-bottom: 0%;">
+<button id="carouselExempl" class="btn btn-primary  " data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+<div class="btnTest" style="background-image:url('/images/cellular.png');" >
+    cellular information</div></button>
+<div class="collapse multi-collapse" id="multiCollapseExample3">
+    <div class="card card-body"   style="height: 280px" >
+       <table  class="table">
+        <thead class="thead-dark">
+               <tr>
+                   <th style="text-align:center "> Cellular information</th>
+               </tr>
+            </thead>
+               <tr>
+                   <th id="p2"> Hostname :  
+                       <br> Gateway EUI        :   
+                       <br> Serial number : 
+                       <br> Status of gateway   :  
+                       <br> Version of gateway : 
+                       <br> Uptime of gateway  : 
+                       <br> Date                : 
+                   </th>
+               </tr>
+           </table>       
+   </div>
+</div>
+
+</div>
+<div class="col" style="padding-bottom: 0%;">
+<button id="carouselExempl" class="btn btn-primary " data-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+<div class="btnTest" style="background-image:url('/images/wireless.png');" >
+    wireless information</div></button>
+<div class="collapse multi-collapse" id="multiCollapseExample4" >
+    <div class="card card-body"    >   
+       <table class="table">
+        <thead class="thead-dark">
+           <tr>
+               <th style=" text-align:center "> Wireless informaion</th>
+           </tr>
+        </thead>
+           <tr>
+               <th id="p2"> SSID :  <%= SSID %>
+                   <br> Interface        : <%= interfacewi %> 
+                   <br> WI-FI standard : 802.11 <%= standardw %>
+                   <br> Ip address   :  <%= ipadd %>
+                   <br> Mode : <%= mode %>
+                   <br> type  : <%= typewi %>
+                   <br> MAC address                : <%= macadd %>
+                   <br> Number of devices connected                : <%= number_of_cl %>
+               </th>
+           </tr>
+       </table>       
+     </div>
+   </div>
+   </div>
+   <div class="col" style="padding-bottom: 0%;">
+    <button id="carouselExempl" class="btn btn-primary " data-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+    <div class="btnTest" style="background-image:url('/images/lora.png');" >
+        LoRa information</div></button>
+    <div class="collapse multi-collapse" id="multiCollapseExample5" >
+        <div class="card card-body"   style="height: 280px" >   
+           <table class="table">
+            <thead class="thead-dark">
+               <tr>
+                   <th style=" text-align:center "> LoRa informtion</th>
+               </tr>
+            </thead>
+               <tr>
+                   <th id="p2"> Interface :  
+                       <br> type        :  
+                       <br> MAC Address : 
+                       <br> ipv4   :  
+                       <br> ipv6 : 
+                       <br> Gateway  : 
+                       <br> DNS                : 
+                       <br> tx                : 
+                       <br> tx                : 
+                   </th>
+               </tr>
+           </table>       
+         </div>
+       </div>
+       </div>
+       <div class="col" style="padding-bottom: 0%;">
+        <button id="carouselExempl" class="btn btn-primary " data-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+        <div class="btnTest" style="background-image:url('/images/stats.png');" >
+            Devices information</div></button>
+        <div class="collapse multi-collapse" id="multiCollapseExample6" >
+            <div class="card card-body"   style="height: 280px" >   
+               <table class="table">
+                <thead class="thead-dark">
+                   <tr>
+                       <th style=" text-align:center "> Devices information</th>
+                   </tr>
+                </thead>
+                   <tr>
+                       <th id="p2"> Interface :  
+                           <br> type        :  
+                           <br> MAC Address : 
+                           <br> ipv4   :  
+                           <br> ipv6 : 
+                           <br> Gateway  : 
+                           <br> DNS                : 
+                           <br> tx                : 
+                           <br> tx                : 
+                       </th>
+                   </tr>
+               </table>       
+             </div>
+           </div>
+           </div>
+</div>
+</div>
+
